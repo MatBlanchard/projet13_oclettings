@@ -26,10 +26,6 @@ jobs:
     executor: heroku/default
     steps:
       - checkout
-      - heroku/install
-      - run: heroku create $HEROKU_APP_NAME
-      - run: heroku addons:create sentry
-      - run: heroku addons:open sentry
       - heroku/deploy-via-git
 
 workflows:
