@@ -26,6 +26,8 @@ jobs:
     executor: heroku/default
     steps:
       - checkout
+      - heroku/install
+      - run: if not exist https://git.heroku.com/$HEROKU_APP_NAME.git (heroku create $HEROKU_APP_NAME)
       - heroku/deploy-via-git
 
 workflows:
