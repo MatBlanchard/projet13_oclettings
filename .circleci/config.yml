@@ -27,8 +27,8 @@ jobs:
     steps:
       - checkout
       - heroku/install
-      - run: heroku create $HEROKU_APP_NAME || echo "app already created"
-      - run: heroku addons:create sentry || echo "sentry already added to the app"
+      - run: heroku create $HEROKU_APP_NAME || echo ""
+      - run: heroku addons:create sentry -a $HEROKU_APP_NAME || echo ""
       - heroku/deploy-via-git
 
 workflows:
