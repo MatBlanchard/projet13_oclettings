@@ -119,8 +119,10 @@ Il faut donc entrer un moyen de paiement sur votre compte Heroku ! :warning:
 
 ### Sentry
 
-Une fois le déploiement effectué, vous pourrez suivre les erreurs de celle-ci à l'adresse suivante :
+Une fois le déploiement effectué, vous pourrez suivre les erreurs de celle-ci de la façon suivante :
 
-https://<your-app-name>.sentry.io/<your-app-name>/<your-app-name>/
+- Allez dans la section "Dashboard" de Heroku.
+- Cliquez sur l'application que vous venez de déployer.
+- Dans la section "Installed add-ons", cliquez sur Sentry.
 
 
