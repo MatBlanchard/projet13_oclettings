@@ -75,3 +75,14 @@ Utilisation de PowerShell, comme ci-dessus sauf :
 
 - Pour activer l'environnement virtuel, `.\venv\Scripts\Activate.ps1` 
 - Remplacer `which <my-command>` par `(Get-Command <my-command>).Path`
+
+### Déploiement
+
+Prérequis :
+- Avoir le code est sur votre propre depot github.
+- Avoir créé un compte sur DockerHub.
+- Avoir créé un compte sur Heroku.
+
+## Docker
+
+
