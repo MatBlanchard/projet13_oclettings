@@ -76,13 +76,44 @@ Utilisation de PowerShell, comme ci-dessus sauf :
 - Pour activer l'environnement virtuel, `.\venv\Scripts\Activate.ps1` 
 - Remplacer `which <my-command>` par `(Get-Command <my-command>).Path`
 
-### Déploiement
+## Déploiement
 
 Prérequis :
-- Avoir le code est sur votre propre depot github.
+- Avoir le code est sur votre propre depot GitHub. (le nom du depot github doit absolument être en minuscule)
 - Avoir créé un compte sur DockerHub.
 - Avoir créé un compte sur Heroku.
 
-## Docker
+#### Docker
+
+Clonez le repository en local et entrez les commandes suivantes à l'endroit du depot local : 
+
+- `docker build -t <your-app-name> .`
+- `docker tag <your-app-name>:latest <your-docker-username>/<your-app-name>:latest`
+- `docker push <your-docker-username>/<your-app-name>:latest`
+
+#### CircleCi
+
+Connectez-vous à CircleCi en utilisant GitHub.
+
+Dans la section "Set up a project", sélectionnez le depot GitHub du projet et utilisez l'option "Fastest".
+
+Dans la section "Project", cliquez sur les 3 petits points à côté du bouton "Unfollow Project" 
+et sélectionnez "Project Settings".
+
+Dans la section "Environment Variables" créer les variables suivantes :
+- DOCKER_PASSWORD (votre mot de passe Docker)
+- DOCKER_USERNAME (votre nom d'utilisateur Docker)
+- HEROKU_API_KEY ()
+- HEROKU_APP_NAME (le nom de l'application sur Heroku)
+
+Enfin, vous n'avez qu'à faire un push sur la branche main du GitHub pour déclencher le déploiement.
+Celui-ci se déclenchera uniquement si CircleCi ne détecte pas d'erreurs durant la compilation, les tests ou 
+la conteneurisation de l'application.
+
+Le processus de déploiement via CircleCi prend 2 à 3 min, vous pouvez suivre l'avancée de celui-ci sur 
+la section "Dashboard" de CircleCi
+
+:warning: Heroku est devenu payant depuis novembre 2022, le déploiement du site vous coutera 7$/mois. 
+Il faut donc entrer un moyen de paiement sur votre compte Heroku !
 
 
