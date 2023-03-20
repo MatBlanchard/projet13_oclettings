@@ -78,7 +78,8 @@ Utilisation de PowerShell, comme ci-dessus sauf :
 
 ## Déploiement
 
-Prérequis :
+#### Prérequis
+
 - Avoir le code est sur votre propre depot GitHub. (le nom du depot github doit absolument être en minuscule)
 - Avoir créé un compte sur DockerHub.
 - Avoir créé un compte sur Heroku.
@@ -103,7 +104,7 @@ et sélectionnez "Project Settings".
 Dans la section "Environment Variables" créer les variables suivantes :
 - DOCKER_PASSWORD (votre mot de passe Docker)
 - DOCKER_USERNAME (votre nom d'utilisateur Docker)
-- HEROKU_API_KEY ()
+- HEROKU_API_KEY (trouvable dans la section "Account settings" sur heroku)
 - HEROKU_APP_NAME (le nom de l'application sur Heroku)
 
 Enfin, vous n'avez qu'à faire un push sur la branche main du GitHub pour déclencher le déploiement.
