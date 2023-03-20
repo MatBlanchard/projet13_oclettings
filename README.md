@@ -119,8 +119,8 @@ Il faut donc entrer un moyen de paiement sur votre compte Heroku ! :warning:
 
 ### Sentry
 
-Une fois le déploiement effectué, vous pourrez suivre les erreurs de cell-ci à l'adresse suivante :
+Une fois le déploiement effectué, vous pourrez suivre les erreurs de celle-ci à l'adresse suivante :
 
-https://oclettings-site.sentry.io/oclettings-site/oclettings-site/
+https://<your-app-name>.sentry.io/<your-app-name>/<your-app-name>/
 
 
