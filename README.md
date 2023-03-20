@@ -115,6 +115,12 @@ Le processus de déploiement via CircleCi prend 2 à 3 min, vous pouvez suivre l
 la section "Dashboard" de CircleCi
 
 :warning: Heroku est devenu payant depuis novembre 2022, le déploiement du site vous coutera 7$/mois. 
-Il faut donc entrer un moyen de paiement sur votre compte Heroku !
+Il faut donc entrer un moyen de paiement sur votre compte Heroku ! :warning:
+
+### Sentry
+
+Une fois le déploiement effectué, vous pourrez suivre les erreurs de cell-ci à l'adresse suivante :
+
+https://oclettings-site.sentry.io/oclettings-site/oclettings-site/
 
 
