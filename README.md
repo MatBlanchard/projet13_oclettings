@@ -81,6 +81,7 @@ Utilisation de PowerShell, comme ci-dessus sauf :
 #### Prérequis
 
 - Avoir le code est sur votre propre depot GitHub. (le nom du depot github doit absolument être en minuscule)
+- Avoir Dokcer CLI installé sur votre ordinateur.
 - Avoir créé un compte sur DockerHub.
 - Avoir créé un compte sur Heroku.
 
