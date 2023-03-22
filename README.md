@@ -117,7 +117,7 @@ la section "Dashboard" de CircleCi
 :warning: Heroku est devenu payant depuis novembre 2022, le déploiement du site vous coutera 7$/mois. 
 Il faut donc entrer un moyen de paiement sur votre compte Heroku ! :warning:
 
-### Sentry
+#### Sentry
 
 Une fois le déploiement effectué, vous pourrez suivre les erreurs de celle-ci de la façon suivante :
 
